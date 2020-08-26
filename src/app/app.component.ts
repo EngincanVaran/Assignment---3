@@ -12,6 +12,7 @@ export class AppComponent {
 
   onClicked(){
     this.isClicked = !this.isClicked;
-    this.myList.push(this.myList.length+1);
+    //this.myList.push(this.myList.length+1);
+    this.myList.push(new Date());
   }
 }

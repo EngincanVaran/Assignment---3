@@ -15,9 +15,9 @@
       > Display Details </button>
       <p *ngIf="isClicked"> Lorem Ipsum, Button is cliked!!!</p>
       <div 
-        *ngFor="let item of myList"
-        [ngStyle]="{backgroundColor: item >= 5 ? 'blue' : 'transparent'}"
-        [ngClass]="{'white-text': item >= 5}">
+        *ngFor="let item of myList; let i = index"
+        [ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}"
+        [ngClass]="{'white-text': i >= 5}">
          {{ item }} </div>
 
     </div>
